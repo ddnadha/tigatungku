@@ -25,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -35,7 +35,27 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
+$routes->get('/admin/menu', 'MenuController::index');
+$routes->get('/admin/menu/(:num)', 'MenuController::show/$1');
+$routes->get('/admin/menu/create', 'MenuController::create');
+$routes->post('/admin/menu', 'MenuController::store');
+$routes->get('/admin/menu/edit/(:num)', 'MenuController::edit/$1');
+$routes->post('/admin/menu/edit/(:num)', 'MenuController::update/$1');
+$routes->get('/admin/menu/delete/(:num)', 'MenuController::destroy/$1');
+
+$routes->get('/admin/ingre', 'IngredientController::index');
+$routes->get('/admin/ingre/(:num)', 'IngredientController::show/$1');
+$routes->get('/admin/ingre/create', 'IngredientController::create');
+$routes->post('/admin/ingre', 'IngredientController::store');
+$routes->get('/admin/ingre/edit/(:num)', 'IngredientController::edit/$1');
+$routes->post('/admin/ingre/edit/(:num)', 'IngredientController::update/$1');
+$routes->get('/admin/ingre/delete/(:num)', 'IngredientController::destroy/$1');
+
+
+
+$routes->get('/admin/menu', 'MenuController::index');
+$routes->get('/admin/ingredient', 'IngredientController::index');
 
 /*
  * --------------------------------------------------------------------

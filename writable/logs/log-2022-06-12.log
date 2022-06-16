@@ -16,3 +16,24 @@ FROM `mahasiswas`', [], false)
  9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-12 11:24:18 --> _get_uri() requires a valid baseURL.
+in SYSTEMPATH\Helpers\url_helper.php on line 36.
+ 1 SYSTEMPATH\Helpers\url_helper.php(133): _get_uri('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(502): current_url(true)
+ 3 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+ 5 ROOTPATH\spark(86): CodeIgniter\CLI\Console->run()
+CRITICAL - 2022-06-12 11:25:03 --> _get_uri() requires a valid baseURL.
+in SYSTEMPATH\Helpers\url_helper.php on line 36.
+ 1 SYSTEMPATH\Helpers\url_helper.php(133): _get_uri('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(502): current_url(true)
+ 3 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+ 5 ROOTPATH\spark(86): CodeIgniter\CLI\Console->run()
+CRITICAL - 2022-06-12 11:27:53 --> _get_uri() requires a valid baseURL.
+in SYSTEMPATH\Helpers\url_helper.php on line 36.
+ 1 SYSTEMPATH\Helpers\url_helper.php(133): _get_uri('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(502): current_url(true)
+ 3 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+ 5 ROOTPATH\spark(86): CodeIgniter\CLI\Console->run()
