@@ -1,0 +1,160 @@
+CRITICAL - 2022-06-19 05:16:20 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:16:31 --> Array to string conversion
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 APPPATH\Controllers\AuthController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AuthController.php', 11, [])
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AuthController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:18:09 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-06-19 05:19:36 --> syntax error, unexpected ')'
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\AuthController')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\AuthController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:19:46 --> syntax error, unexpected ')'
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\AuthController')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\AuthController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:21:47 --> Array to string conversion
+in APPPATH\Controllers\AuthController.php on line 14.
+ 1 APPPATH\Controllers\AuthController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AuthController.php', 14, [])
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AuthController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:22:21 --> Call to undefined function App\Controllers\is_empty()
+in APPPATH\Controllers\AuthController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:25:23 --> syntax error, unexpected '{'
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\AuthController')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\AuthController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:26:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 APPPATH\Controllers\AuthController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthController.php', 11, [])
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AuthController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:30:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 APPPATH\Controllers\AuthController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthController.php', 11, [])
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AuthController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:30:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthController.php on line 11.
+ 1 APPPATH\Controllers\AuthController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthController.php', 11, [])
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AuthController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:39:13 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AuthController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AuthController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:43:59 --> Undefined variable: route
+in APPPATH\Config\Routes.php on line 71.
+ 1 APPPATH\Config\Routes.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: route', 'APPPATH\\Config\\Routes.php', 71, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(760): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 05:45:45 --> _get_uri() requires a valid baseURL.
+in SYSTEMPATH\Helpers\url_helper.php on line 36.
+ 1 SYSTEMPATH\Helpers\url_helper.php(133): _get_uri('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(502): current_url(true)
+ 3 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+ 5 ROOTPATH\spark(86): CodeIgniter\CLI\Console->run()
+CRITICAL - 2022-06-19 07:17:51 --> syntax error, unexpected 'base_url' (T_STRING), expecting ';' or ','
+in APPPATH\Controllers\MenuController.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\MenuController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MenuController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MenuController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\MenuController')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\MenuController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 07:18:11 --> Undefined variable: dataBerkas
+in APPPATH\Controllers\MenuController.php on line 36.
+ 1 APPPATH\Controllers\MenuController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataBerkas', 'APPPATH\\Controllers\\MenuController.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 08:40:37 --> Allowed fields must be specified for model: App\Models\Menu
+in SYSTEMPATH\BaseModel.php on line 1138.
+ 1 SYSTEMPATH\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Menu')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\MenuController.php(41): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-19 08:40:59 --> Column 'price' cannot be null
+CRITICAL - 2022-06-19 08:40:59 --> Column 'price' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `menus` (`name`, `unit`, `price`, `description`, `img`) VALUES (\'Roti Buaya\', \'pcs\', NULL, \'Roti buaya kayak kamu\', \'1655646059_24683b9efe017c0da6ce.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `menus` (`name`, `unit`, `price`, `description`, `img`) VALUES (\'Roti Buaya\', \'pcs\', NULL, \'Roti buaya kayak kamu\', \'1655646059_24683b9efe017c0da6ce.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `menus` (`name`, `unit`, `price`, `description`, `img`) VALUES (\'Roti Buaya\', \'pcs\', NULL, \'Roti buaya kayak kamu\', \'1655646059_24683b9efe017c0da6ce.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `menus` (`name`, `unit`, `price`, `description`, `img`) VALUES (:name:, :unit:, :price:, :description:, :img:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MenuController.php(41): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->store()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 08:46:30 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Controllers\MenuController.php on line 47.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\MenuController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MenuController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MenuController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\MenuController')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\MenuController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-19 08:50:19 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\MenuController.php(43): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\uploads\\img\\menu', '1655646619_bd81fb538d6676312e24')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

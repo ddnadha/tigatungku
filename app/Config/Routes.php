@@ -35,27 +35,56 @@ $routes->setAutoRoute(false);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-// $routes->get('/', 'Home::index');
-$routes->get('/admin/menu', 'MenuController::index');
-$routes->get('/admin/menu/(:num)', 'MenuController::show/$1');
-$routes->get('/admin/menu/create', 'MenuController::create');
-$routes->post('/admin/menu', 'MenuController::store');
-$routes->get('/admin/menu/edit/(:num)', 'MenuController::edit/$1');
-$routes->post('/admin/menu/edit/(:num)', 'MenuController::update/$1');
-$routes->get('/admin/menu/delete/(:num)', 'MenuController::destroy/$1');
+$routes->group('', ['filter' => 'auth'],  static function($routes){
+    $routes->get('/admin', 'AuthController::index');
+    $routes->get('/admin/menu', 'MenuController::index');
+    $routes->get('/admin/menu/(:num)', 'MenuController::show/$1');
+    $routes->get('/admin/menu/create', 'MenuController::create');
+    $routes->post('/admin/menu/create', 'MenuController::store');
+    $routes->get('/admin/menu/edit/(:num)', 'MenuController::edit/$1');
+    $routes->post('/admin/menu/edit/(:num)', 'MenuController::update/$1');
+    $routes->get('/admin/menu/delete/(:num)', 'MenuController::destroy/$1');
 
-$routes->get('/admin/ingre', 'IngredientController::index');
-$routes->get('/admin/ingre/(:num)', 'IngredientController::show/$1');
-$routes->get('/admin/ingre/create', 'IngredientController::create');
-$routes->post('/admin/ingre', 'IngredientController::store');
-$routes->get('/admin/ingre/edit/(:num)', 'IngredientController::edit/$1');
-$routes->post('/admin/ingre/edit/(:num)', 'IngredientController::update/$1');
-$routes->get('/admin/ingre/delete/(:num)', 'IngredientController::destroy/$1');
+    $routes->get('/admin/ingre', 'IngredientController::index');
+    $routes->get('/admin/ingre/(:num)', 'IngredientController::show/$1');
+    $routes->get('/admin/ingre/create', 'IngredientController::create');
+    $routes->post('/admin/ingre/create', 'IngredientController::store');
+    $routes->get('/admin/ingre/edit/(:num)', 'IngredientController::edit/$1');
+    $routes->post('/admin/ingre/edit/(:num)', 'IngredientController::update/$1');
+    $routes->get('/admin/ingre/delete/(:num)', 'IngredientController::destroy/$1');
+    $routes->get('/admin/ingre/restock', 'IngredientController::createRestock');
+    $routes->post('/admin/ingre/restock', 'IngredientController::storeRestock');
+
+    $routes->get('/admin/order', 'TransactionController::index');
+    $routes->get('/admin/order/incoming', 'TransactionController::incoming');
+    $routes->get('/admin/order/history', 'TransactionController::history');
+    $routes->get('/admin/order/detail/(:num)', 'TransactionController::show/$1');
 
 
+    $routes->post('/menu/create/ing', 'MenuController::storeTmpIng');
+    $routes->get('/menu/delete/ing/(:num)', 'MenuController::deleteTmpIng/$1');
 
-$routes->get('/admin/menu', 'MenuController::index');
-$routes->get('/admin/ingredient', 'IngredientController::index');
+
+    $routes->get('/admin/menu', 'MenuController::index');
+    $routes->get('/admin/ingredient', 'IngredientController::index');
+});
+
+
+//Auth Routes
+$routes->get('/login', 'AuthController::login');
+$routes->get('/register', 'AuthController::regis');
+$routes->post('/login', 'AuthController::authenticate');
+$routes->post('/register', 'AuthController::register');
+$routes->get('/logout', 'AuthController::logout');
+
+//Guest Routes
+$routes->get('/', 'GuestController::home');
+$routes->get('/sale', 'GuestController::sale', ['filter' => 'auth']);
+$routes->get('/salesconfirm', 'GuestController::salesconfirm', ['filter' => 'auth']);
+$routes->get('/cart/add/(:num)', 'TransactionController::addCart/$1', ['filter' => 'auth']);
+$routes->get('/cart/reduce/(:num)', 'TransactionController::reduceCart/$1', ['filter' => 'auth']);
+$routes->post('/order/create', 'TransactionController::create');
+
 
 /*
  * --------------------------------------------------------------------

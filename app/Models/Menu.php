@@ -13,7 +13,7 @@ class Menu extends Model
     protected $insertID         = 0;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $protectFields    = false;
     protected $allowedFields    = [];
 
     // Dates
@@ -39,4 +39,20 @@ class Menu extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function joinCart($type = 'left')
+    {
+        return $this->db->table('menus')
+            ->select('*,menus.id as id, carts.id as cart_id')
+            ->join('carts', 'menus.id = carts.menu_id and carts.user_id = '.session()->get('userdata')->id, $type)
+            ->get()->getResult();
+    }
+
+    public function withSold(){
+        return $this->db->table('menus')
+            ->select('menus.*, sum(qty) as sold')
+            ->join('order_menus', 'menus.id = order_menus.menu_id', 'inner')
+            ->groupBy('menu_id')
+            ->get()->getResult();
+    }
 }

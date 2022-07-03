@@ -7,13 +7,13 @@ use CodeIgniter\Model;
 class OrderMenu extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'ordermenus';
+    protected $table            = 'order_menus';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $protectFields    = false;
     protected $allowedFields    = [];
 
     // Dates
@@ -39,4 +39,12 @@ class OrderMenu extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function transaction($id){
+        return $this->db->table('order_menus')
+            ->select('*, menus.id as id')
+            ->join('menus', 'menus.id = order_menus.menu_id', 'inner')
+            ->where('order_id', $id)
+            ->get()->getResult();
+    }
 }

@@ -16,6 +16,11 @@
                 <div class="card">
                   <div class="card-header">
                     <h4>Daftar Menu</h4>
+                    <div class="card-header-action">
+                      <a href="<?php echo base_url('/admin/menu/create') ?>" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Create Menu
+                      </a>
+                    </div>
                   </div>
                   <div class="card-body">
                     <div class="table-responsive">
@@ -35,9 +40,9 @@
                               <td><?php echo $m+1 ?></td>
                               <td><?php echo $menu->name ?></td>
                               <td><?php echo "Rp " . number_format($menu->price,0,',','.')." / ".$menu->unit ?></td>
-                              <td></td>
+                              <td><?= $menu->sold.' '.$menu->unit ?></td>
                               <td>
-                                <a class="btn btn-info" href="<?php echo base_url('/admin/menu/detail/'.$menu->id) ?>">Detail</a>
+                                <a class="btn btn-info" href="<?php echo base_url('/admin/menu/'.$menu->id) ?>">Detail</a>
                                 <a class="btn btn-warning" href="<?php echo base_url('/admin/menu/edit/'.$menu->id) ?>">Edit</a>
                                 <a class="btn btn-danger" href="<?php echo base_url('/admin/menu/delete/'.$menu->id) ?>">Delete</a>
                               </td>

@@ -16,6 +16,11 @@
                 <div class="card">
                   <div class="card-header">
                     <h4>Daftar Ingredient</h4>
+                    <div class="card-header-action">
+                      <a href="<?php echo base_url('/admin/ingre/create') ?>" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> New Ingredients
+                      </a>
+                    </div>
                   </div>
                   <div class="card-body">
                     <div class="table-responsive">

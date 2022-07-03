@@ -13,7 +13,7 @@ class Order extends Model
     protected $insertID         = 0;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $protectFields    = false;
     protected $allowedFields    = [];
 
     // Dates
@@ -39,4 +39,50 @@ class Order extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function findType(string $status): array
+    {
+        return $this->db->table('orders')
+            ->select('orders.*, users.name')
+            ->join('users', 'orders.user_id = users.id', 'inner')
+            ->where('status', $status)
+            ->get()->getResult();
+    }
+
+    public function countIncome($month = null){
+        if ($month == null) date('n');
+        return $this->db->table('orders')
+            ->select('sum(total) as income')
+            ->where('status', 'done')
+            ->get()->getFirstRow();
+    }
+
+    public function graphIncome($month = null): array
+    {
+        if ($month == null) date('n');
+        return $this->db->table('orders')
+            ->select('sum(total) as income, date(created_at) as date')
+            ->where('status', 'done')
+            ->groupBy('date')
+            ->get()->getResult();
+    }
+    public function countSold($month = null)
+    {
+        if ($month == null) date('n');
+        return $this->db->table('order_menus')
+            ->select('sum(qty) as sold, date(created_at) as date')
+            ->join('orders', 'order_menus.order_id = orders.id', 'inner')
+            ->groupBy('date')
+            ->get()->getFirstRow();
+    }
+
+    public function graphSold($month = null): array
+    {
+        if ($month == null) date('n');
+        return $this->db->table('order_menus')
+            ->select('sum(order_menus.qty) as qty, date(orders.created_at) as date')
+            ->join('orders', 'order_menus.order_id = orders.id', 'inner')
+            ->groupBy('date')
+            ->get()->getResult();
+    }
 }

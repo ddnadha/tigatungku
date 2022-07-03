@@ -1,0 +1,60 @@
+CRITICAL - 2022-07-03 06:14:10 --> syntax error, unexpected ','
+in APPPATH\Views\pages\admin\dashboard.php on line 63.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\AuthController.php(30): view('pages/admin/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-03 06:14:26 --> number_format() expects parameter 1 to be float, object given
+in APPPATH\Views\pages\admin\dashboard.php on line 63.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'number_format() expects parameter 1 to be float, object given', 'APPPATH\\Views\\pages\\admin\\dashboard.php', 63, [...])
+ 2 APPPATH\Views\pages\admin\dashboard.php(63): number_format(Object(stdClass), 0, ',', 'C:\\xampp7\\htdocs\\tigatungku')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\admin\\dashboard.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/admin/dashboard', [], true)
+ 6 APPPATH\Controllers\AuthController.php(30): view('pages/admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AuthController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-03 06:24:03 --> Unknown column 'created_at' in 'field list'
+CRITICAL - 2022-07-03 06:24:03 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT sum(qty) as sold, date(created_at) as date
+FROM `order_menus`
+GROUP BY `date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(qty) as sold, date(created_at) as date
+FROM `order_menus`
+GROUP BY `date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(qty) as sold, date(created_at) as date
+FROM `order_menus`
+GROUP BY `date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT sum(qty) as sold, date(created_at) as date
+FROM `order_menus`
+GROUP BY `date`', [], false)
+ 5 APPPATH\Models\Order.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AuthController.php(30): App\Models\Order->countSold()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AuthController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-03 06:34:33 --> A function with return type must return a value
+in APPPATH\Controllers\IngredientController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-07-03 06:37:33 --> Column 'qty' cannot be null
+CRITICAL - 2022-07-03 06:37:33 --> Column 'qty' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `history_ingredients` (`ingredient_id`, `price`, `qty`, `buy_date`) VALUES (\'2\', \'18000\', NULL, \'2022-07-03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `history_ingredients` (`ingredient_id`, `price`, `qty`, `buy_date`) VALUES (\'2\', \'18000\', NULL, \'2022-07-03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `history_ingredients` (`ingredient_id`, `price`, `qty`, `buy_date`) VALUES (\'2\', \'18000\', NULL, \'2022-07-03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `history_ingredients` (`ingredient_id`, `price`, `qty`, `buy_date`) VALUES (:ingredient_id:, :price:, :qty:, :buy_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\IngredientController.php(78): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\IngredientController->storeRestock()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IngredientController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

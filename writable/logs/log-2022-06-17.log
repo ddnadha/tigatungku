@@ -1,0 +1,126 @@
+CRITICAL - 2022-06-17 13:42:06 --> Undefined variable: ing
+in APPPATH\Views\pages\admin\menu\create.php on line 59.
+ 1 APPPATH\Views\pages\admin\menu\create.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ing', 'APPPATH\\Views\\pages\\admin\\menu\\create.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\admin\\menu\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/admin/menu/create', [], true)
+ 5 APPPATH\Controllers\MenuController.php(27): view('pages/admin/menu/create')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 13:42:16 --> Undefined variable: ing
+in APPPATH\Views\pages\admin\menu\create.php on line 59.
+ 1 APPPATH\Views\pages\admin\menu\create.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ing', 'APPPATH\\Views\\pages\\admin\\menu\\create.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\admin\\menu\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/admin/menu/create', [], true)
+ 5 APPPATH\Controllers\MenuController.php(27): view('pages/admin/menu/create')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 14:26:34 --> Undefined variable: route
+in APPPATH\Config\Routes.php on line 55.
+ 1 APPPATH\Config\Routes.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: route', 'APPPATH\\Config\\Routes.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(760): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 14:27:10 --> Allowed fields must be specified for model: App\Models\MenuIngredient
+in SYSTEMPATH\BaseModel.php on line 1138.
+ 1 SYSTEMPATH\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\MenuIngredient')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\MenuController.php(41): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->storeTmpIng()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 15:00:39 -->  route cannot be found while reverse-routing.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 56.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('C:\\xampp7\\htdocs\\tigatungku')
+ 2 SYSTEMPATH\Common.php(863): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\MenuController.php(52): redirect('http://localhost/tigatungku/admin/menu/create')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->storeTmpIng()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 15:05:17 --> Call to a member function delete() on null
+in APPPATH\Controllers\MenuController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->deleteTmpIng('2')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 15:05:25 --> Call to a member function delete() on null
+in APPPATH\Controllers\MenuController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->deleteTmpIng('2')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 15:07:57 --> Call to undefined method stdClass::delete()
+in APPPATH\Controllers\MenuController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MenuController->deleteTmpIng('3')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 21:24:03 --> syntax error, unexpected '}', expecting ';'
+in APPPATH\Controllers\IngredientController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\IngredientController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\IngredientController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\IngredientController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\IngredientController')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\IngredientController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 21:25:16 --> Call to undefined method App\Models\Ingredient::store
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\IngredientController.php(40): CodeIgniter\Model->__call('store', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\IngredientController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IngredientController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 21:25:28 --> Call to undefined method App\Models\Ingredient::create
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\IngredientController.php(40): CodeIgniter\Model->__call('create', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\IngredientController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IngredientController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 21:26:06 --> Allowed fields must be specified for model: App\Models\Ingredient
+in SYSTEMPATH\BaseModel.php on line 1138.
+ 1 SYSTEMPATH\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Ingredient')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\IngredientController.php(36): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\IngredientController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IngredientController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 21:26:37 --> Allowed fields must be specified for model: App\Models\Ingredient
+in SYSTEMPATH\BaseModel.php on line 1138.
+ 1 SYSTEMPATH\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Ingredient')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\IngredientController.php(40): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\IngredientController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IngredientController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 21:28:59 -->  route cannot be found while reverse-routing.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 56.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('C:\\xampp7\\htdocs\\tigatungku')
+ 2 SYSTEMPATH\Common.php(863): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\IngredientController.php(37): redirect('http://localhost/tigatungku/admin/ingre')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\IngredientController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IngredientController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-17 21:34:43 --> Argument 2 passed to CodeIgniter\Model::insert() must be of the type bool, array given, called in C:\xampp7\htdocs\tigatungku\app\Controllers\IngredientController.php on line 48
+in SYSTEMPATH\Model.php on line 652.
+ 1 APPPATH\Controllers\IngredientController.php(48): CodeIgniter\Model->insert('3', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\IngredientController->update('3')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IngredientController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

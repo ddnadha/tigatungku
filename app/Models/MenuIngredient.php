@@ -13,15 +13,9 @@ class MenuIngredient extends Model
     protected $insertID         = 0;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
+    protected $protectFields    = false;
     protected $allowedFields    = [];
 
-    // Dates
-    protected $useTimestamps = false;
-    protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
 
     // Validation
     protected $validationRules      = [];
@@ -39,4 +33,12 @@ class MenuIngredient extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function joinIng(){
+        return $this->db->table('menu_ingredients')
+            ->select('*, menu_ingredients.id as menusing_id')
+            ->join('ingredients', 'menu_ingredients.ing_id = ingredients.id')
+            ->get()
+            ->getResult();
+    }
 }
